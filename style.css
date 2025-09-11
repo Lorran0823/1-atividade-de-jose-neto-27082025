@@ -75,7 +75,6 @@ nav a::before {
     display: block;
     height: 5px;
     background-color: #cc00ff;
-
     position: absolute;
     top: 0;
     width: 0%;
@@ -87,7 +86,9 @@ nav a:hover::before {
     width: 100%;
 }
 
-
+.sobre{
+    font-size: 30px;
+}
 .apresentacao{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
@@ -95,15 +96,18 @@ nav a:hover::before {
     margin: 20px;
     
 }
+
 .h1{
-    font-size: 40px;
+    font-size: 50px;
     color: #dc14ee;
 }
 
 .h2{
-    font-size: 30px;
+    font-size: 40px;
     color: #ffffff;
-    
+
+
+
 }
 .apresentacao p{
     font-size: 20px;
@@ -114,6 +118,9 @@ nav a:hover::before {
 
 .destaque{
     color: #ff00ffc7;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
 }
 
 .hobbies{
@@ -131,39 +138,51 @@ nav a:hover::before {
     background: linear-gradient(135deg, #000001, #7706c7);
     padding: 40px;
     border-radius: 20px;
-    margin: 40px auto;
-    
+    margin: 40px auto;    
 }
 
 
-
-.caixa-hobbies ul {
+.h2-hobbies{
     font-size: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 3rem; 
-    list-style: none; 
-    padding: 0;
-    margin: 20px;
 }
 
-.galeria {
+.container-hobbies {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 70px;
-    margin-top: 30px;
-    margin-bottom: 90px;
-    
-    
-    }
+    gap: 220px;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-.galeria img {
-    width: 200px; 
-    border-radius: 15px;
-    border: 5px solid #dc14ee;
+.hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.3s;
     
-    }
+}
+
+.hobby img {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    border: 6px solid #ea00ff;
+}
+
+.hobby span {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.hobby:hover {
+    transform: scale(1.05);
+}
 
 .skills {
     text-align: center;
@@ -283,10 +302,14 @@ h2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
 .container {
     display: flex;
     align-items: center;
     gap: 20px;
+    justify-content: center;
 }
 
 h2 {
@@ -322,15 +345,43 @@ html{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     .container {
         flex-direction: column;  
         text-align: center;
-        gap: 10px;   
+        gap: 20px;   
     }
 
     .container img {
         max-width: 100%;       
-        margin-bottom: 20px;   
+        margin-bottom: 20px;
+        width: 300px; 
+        gap: 20px;  
     }
+
+
+    .hobbies{
+        padding: 19px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .container-hobbies{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hobby img{
+        max-width: 300%;
+        margin-bottom: 30px;
+    }
+
+
+
 }
+
+
+
