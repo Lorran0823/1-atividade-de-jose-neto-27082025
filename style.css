@@ -55,7 +55,7 @@ nav ul {
     padding: 0;
     list-style: none;
     display: flex;
-    
+    align-items: center;
 }
 
 nav li {
@@ -357,9 +357,15 @@ html {
 }
 
 
+.nav-link{
+    align-items: center;
+}
 
 @media (max-width: 1080px) {
 
+    .nav-link{
+    align-items: center;
+}
 
 
 
@@ -407,7 +413,9 @@ html {
         margin-top: 70px;
     }
 
-
+    .footer{
+        font-size: 15px;
+    }
 
 
 
