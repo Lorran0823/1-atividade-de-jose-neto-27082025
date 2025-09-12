@@ -46,8 +46,6 @@ header::after {
 nav {
     float: right;
     margin-top: 8px;
-
-
 }
 
 nav ul {
@@ -155,6 +153,7 @@ nav a:hover::before {
 
 .h2-hobbies {
     font-size: 30px;
+    margin-left: 20px;
 }
 
 .container-hobbies {
@@ -215,8 +214,6 @@ nav a:hover::before {
     flex-wrap: wrap;
 
 }
-
-
 
 
 .contact {
@@ -357,15 +354,20 @@ html {
 }
 
 
-.nav-link{
+.nav-link {
     align-items: center;
 }
+
 
 @media (max-width: 1080px) {
 
-    .nav-link{
-    align-items: center;
-}
+
+
+    .nav-link {
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
 
 
 
@@ -413,8 +415,13 @@ html {
         margin-top: 70px;
     }
 
-    .footer{
+    .footer {
         font-size: 15px;
+    }
+
+    .h2{
+        align-items: center;
+        margin-left: 20px;
     }
 
 
