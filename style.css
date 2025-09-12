@@ -44,6 +44,7 @@ header::after {
 nav {
     float: right;
     margin-top: 8px;
+
     
 }
 
@@ -59,6 +60,7 @@ nav li {
     padding-top: 23px;
     position: relative;
     padding: auto;
+    
 
 }
 
@@ -348,11 +350,22 @@ html{
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
+
+    .nav-link{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+
+
     .container {
         flex-direction: column;  
         text-align: center;
-        gap: 20px;   
+        gap: 10px;  
     }
 
     .container img {
@@ -389,8 +402,9 @@ html{
     }
 
     .img{
-        margin-top: 60px;
+        margin-top: 50px;
     }
+    
     
 
 
